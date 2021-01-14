@@ -5,9 +5,51 @@
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
-// @import "font-awesome-sprockets";
-// @import "font-awesome";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+body {
+  background-color: #04576225;
+}
+
+.nav-top {
+  height: 60px;
+}
+
+.nav-link {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #f3f2dab0;
+  border-radius: 16px;
+  transition: 0.25s ease;
+}
+.nav-link:hover {
+  background-color: rgba(230,230,230,0.1);
+  color: #f3f2da;
+}
+
+.nav-top {
+  background: linear-gradient(-45deg, #4e8d7c, #045762, #ea97ad);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
